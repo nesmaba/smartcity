@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "smartcity-335217",
+  "private_key_id": "29f6cc9c0dd383e6827ed4bac6b080e4de32c430",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDZcTG/bvS3vEs1\nvrRmCVB6/Xf0WqEBLBrbkjoUb7xRDl+lyHQ3INCCq+8ylp5hI292CI1SBDB5rdU1\nN2ajMZhvaCHHej2ZJRYtlf+evlm/so6kRTUsJ+V7ucqSEWPqRjkEuh2ngXFsjttO\nPr5auxo2hVfVEwBzbp7dS3RHOM9GyCVEUmf6txWWU2THg33EGE2iQGgYmRrqKvuo\n1X/Y9QYDN0V1XAVRiJQSkzTdIVjRUiqUDtDIREBmDQCmDJI/2jTSEI8ba3bg41J4\nlVkriTK9mWJTTrOSXpfp6cMtY9pQdiZtgK9i7v95c8lA98SfjwAgtlv11J213nln\nO+9WEvcxAgMBAAECggEABSQDwBN4d6UpxgiCYIZh2VAhKnny1050O0xJ6tSSO2K/\naIteEmhh/zGsNjvEKZnAqqXpgwHhJejlL7ZMMX/pROEAw3C+M6uu/Yu2GMoS4LeK\nkpM/fl7AslvvHRe9W/smOyVg5BmCu/h/DARRupI0owtXmAyawYZHY5+QDTFocEzp\n3xNQUrDzspOYwjgskK+mX7ekunZn4idA+qvdJAw/Yw/dq4qxNmJR3UobTLB/qPDb\nqj6oHpMmZyZSXVTCdCfHu5thLXwpo01R4vlcCI7pJe/krLSS7u8gq82NhHaulRNl\nl481+t3Iz/7q7tZhPQDBbiCPsaLxjsvhz80BA70MkQKBgQD7PsqDrKeBK1BXwcek\nXG95vw+KrBUwlTr3rmY20eF4Khn8H7s8vbH9KkUXSUAwc7jTN4iLvQ3W/rsO1XwG\nwS/obWYlt8J4Ov3D6wJZUI5uq/sSsCiSjih4mf8SHTepAbQsq/ARxdE9fzriO3wH\nyOh0jb4jb5GLWzvLN76zmVuvBQKBgQDdjqMfBnCaFJ3YNre4nUGNTwOV7hARfzZp\nox9hXQdJ464Z4WozXdIe0fiyJhqqGA1+XuI0+ovesnGmIgAKmZ/XcuwsgnfNqiIp\n0PIJJ5ZTC/5v7CukHxEk4A4pgnm942XVthCTfTvQ0WPfbbBVNkixGX9WqXLjigP2\ntKh8nTanPQKBgD9senMDAsX4yS9eG6fCLeHt+V5oUnEROvGLdQIhuWk8N5MN75ZF\nzMi8AvT96NZSYDXxruaXswazB0WXXtfVrOJfu4mJ+e2f9q+eg9lIHKyTfa4aCiP0\n/wJy3ZEVDxf69iDQxqm15jxAAf1aRtUwQn4pyfXoFDW5sj56tAlijWKBAoGBALHE\niM2T9TUr5ZpeDPtr8fTXuSDLaskfMSGBaOROKFL5A/BwFS4x0S45ezo1qJ9hvTHw\nH8AyZ5e/xcBu92mJ6d6Mr0LnTAkQwWib5hfCU7M+pGBZNorxAmh7/eEAd34MvuDC\nvHoauavK1j+nWxyD+b9fnfSC8VPwoU2JlsalvfxhAoGBAKPvkxmPuscD+mUnRumc\nJX+/OFlJb5/69myigrAklzwJeyiVvfrACRX6Dr9fQ4VT7WrZFsPvFHqn07l5+ZJb\n3GpfWIeD8UYwtyHciCdO0lfN9En+Ul0daV8LS1f79AOVwRosGii5X1NCfGPWQ+vj\nPf0Vz3UFYbbrStohWTPkxGap\n-----END PRIVATE KEY-----\n",
+  "client_email": "smartcity@smartcity-335217.iam.gserviceaccount.com",
+  "client_id": "107861627238984794430",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/smartcity%40smartcity-335217.iam.gserviceaccount.com"
+}
