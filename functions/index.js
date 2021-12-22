@@ -69,25 +69,70 @@ exports.saveAccidente = functions // FUNCIONANDO
   .database.ref('/accidentes/{accidenteId}') // Para realtime database
     .onCreate((snap, context) => {
       // Grab the current value of what was written to Firestore.
-      const lugar = "nuevoLugarCrear";
       functions.logger.log('Creando...', context.params.documentId);
       functions.logger.log('CreandoSnap...', snap);
       
-      return snap.ref.child("lugar").set(lugar);
+      const topic = "accidentes";
+
+      const payload = {
+        topic: topic,
+          notification: {
+              title: 'Demo mensaje Función',
+              body: "Mensaje de prueba"
+          },
+          data: {
+              body: "Cuerpo Mensaje de prueba",
+          }
+      };
+      
+      admin.messaging().send(payload).then((response) => {
+          // Response is a message ID string.
+          console.log('Successfully sent message:', response);
+          return {success: true};
+      }).catch((error) => {
+          return {error: error.code};
+      });
+
+      return snap.ref.child("atendido").set("false");
       // .set(estado, {merge: true});
     });
 
+    // TODO: Al insertar uno me salta siempre aquí.
 exports.updateAccidente = functions // FUNCIONANDO
   .region('europe-west1')
   .database.ref('/accidentes/{accidenteId}') // Para realtime database
     .onUpdate((change, context) => {
-      const accidenteId = context.params.accidenteId; // the id of the entry that was just updated.
-        console.log(`A published accidente has just been updated, Id: ${accidenteId}`);
+      functions.logger.log("VALOR: ${change.before.val()}");
 
-        const updatedLugarContent = change.after.val().lugar; // the new value
-        const previousLugarContent = change.before.val().lugar; // the previous value
-        console.log(`${accidenteId} changed the content from: ${previousLugarContent} to ${updatedLugarContent}`);
-        
-        return change.after.ref.child('atendido').set(true);
+      if(change.before.exists()){ // No me funciona. 
+        const accidenteId = context.params.accidenteId; // the id of the entry that was just updated.
+          console.log(`A published accidente has just been updated, Id: ${accidenteId}`);
 
+          const updatedLugarContent = change.after.val().lugar; // the new value
+          const previousLugarContent = change.before.val().lugar; // the previous value
+          console.log(`${accidenteId} changed the content from: ${previousLugarContent} to ${updatedLugarContent}`);
+          
+          const topic = "accidentes";
+
+          const payload = {
+            topic: topic,
+              notification: {
+                  title: 'Demo mensaje Función',
+                  body: "Mensaje de prueba"
+              },
+              data: {
+                  body: "Cuerpo Mensaje de prueba",
+              }
+          };
+          
+          admin.messaging().send(payload).then((response) => {
+              // Response is a message ID string.
+              console.log('Successfully sent message:', response);
+              return {success: true};
+          }).catch((error) => {
+              return {error: error.code};
+          });
+
+          return change.after.ref.child('atendido').set(true);
+        }
     });
